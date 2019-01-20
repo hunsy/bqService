@@ -3,7 +3,7 @@
          xmlns="http://java.sun.com/xml/ns/javaee"
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
          id="WebApp_ID" version="2.5">
-    <display-name>cake</display-name>
+    <display-name>bq_cms</display-name>
 
 <!--    <filter>
         <filter-name>authClient</filter-name>
@@ -15,13 +15,12 @@
         <url-pattern>/admin/*</url-pattern>
     </filter-mapping>-->
 
-
     <filter>
         <filter-name>jfinal</filter-name>
         <filter-class>com.jfinal.core.JFinalFilter</filter-class>
         <init-param>
             <param-name>configClass</param-name>
-            <param-value>com.bingqiong.bq.conf.BqConf</param-value>
+            <param-value>com.bingqiong.bq.conf.BqCmsConf</param-value>
         </init-param>
     </filter>
 
